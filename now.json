@@ -4,32 +4,15 @@
   "name": "portfolio",
   "builds": [
     {
-      "src": "packages/next-main/package.json",
+      "src": "packages/duquiz-admin/package.json",
       "use": "@now/next@canary"
-    },
-    {
-      "src": "packages/next-blog/package.json",
-      "use": "@now/next@canary"
-    },
-    {
-      "src": "packages/api/apollo/index.js",
-      "use": "@now/node-server"
     }
   ],
   "routes": [
     {
-      "src": "^/blog(.*)",
-      "dest": "packages/next-blog$1"
-    },
-    {
-      "src": "/graphql(.*)",
-      "dest": "packages/api/apollo/index.js"
-    },
-    {
-      "src": "^(.*)$",
-      "dest": "packages/next-main$1"
+      "src": "^(.*)",
+      "dest": "packages/duquiz-admin$1"
     }
   ],
-  "regions": ["all"],
-  "alias": "fillipvt.com"
+  "regions": ["all"]
 }

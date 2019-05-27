@@ -1,16 +1,16 @@
 {
-  "name": "portfolio-monorepo",
+  "name": "kpm-monorepo",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "repository": "https://github.com/fillipvt/portfolio.git",
-  "author": "fillipvt",
+  "author": "rocinante42",
   "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "dev:blog": "yarn --cwd packages/next-blog dev",
+    "dev:duquiz-admin": "yarn --cwd packages/duquiz-admin dev",
     "dev:main": "yarn --cwd packages/next-main dev",
     "build:components": "yarn --cwd packages/shared-components build",
     "dev:components": "yarn --cwd packages/shared-components storybook",
