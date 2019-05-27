@@ -10,3 +10,6 @@ build
 yarn-error.log
 locale/_build
 locale/*/*.js
+packages/*/node_modules
+packages/*/.next 
+packages/*/yarn-error.log

@@ -1,8 +1,9 @@
 import React from "react";
 import App, { Container } from "next/app";
 
-import { GlobalStyles, FontAwesome } from "@fillipvt/components";
+import { GlobalStyles, FontAwesome } from "@kpm/components";
 import { Global } from "@emotion/core";
+import "semantic-ui-css/semantic.min.css";
 
 FontAwesome;
 class PortfolioApp extends App {

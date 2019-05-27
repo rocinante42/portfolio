@@ -1,9 +1,9 @@
 {
-  "name": "@fillipvt/components",
+  "name": "@kpm/components",
   "private": false,
   "version": "0.0.1",
   "description": "Library of shared components",
-  "author": "fillipvt",
+  "author": "rocinante42",
   "license": "MIT",
   "scripts": {
     "build": "yarn build:cjs && yarn build:esm && yarn build:es && yarn build:umd && yarn build:copy-files",

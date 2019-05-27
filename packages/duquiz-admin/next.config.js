@@ -25,7 +25,7 @@ module.exports = (phase, { defaultConfig }) => {
 
   return withCss(
     withTM({
-      transpileModules: ["@fillipvt/components"],
+      transpileModules: ["@kpm/components"],
       assetPrefix: isProd ? "https://portfolio.onionboy.now.sh" : "",
       webpack: (config, options) => {
         config.module.rules.push({
