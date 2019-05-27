@@ -26,7 +26,8 @@ module.exports = (phase, { defaultConfig }) => {
   return withCss(
     withTM({
       transpileModules: ["@kpm/components"],
-      assetPrefix: isProd ? "https://portfolio.onionboy.now.sh" : "",
+      assetPrefix: isProd ? "https://portfolio-onionboy.kpm.now.sh" : "",
+      target: "serverless",
       webpack: (config, options) => {
         config.module.rules.push({
           test: /\.(png|svg|eot|otf|ttf|woff|woff2)$/i,

@@ -15,6 +15,7 @@
     "build:components": "yarn --cwd packages/shared-components build",
     "dev:components": "yarn --cwd packages/shared-components storybook",
     "lerna:update": "lernaupdate",
+    "version": "lerna version --conventional-commits",
     "deploy:production": "now && now alias"
   },
   "devDependencies": {

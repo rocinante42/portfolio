@@ -1,9 +1,8 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from "react";
+import { storiesOf } from "@storybook/react";
 
-import Header from '../src/Header'
+import Header from "../src/Header";
 
-storiesOf('Header', module)
-  .add('start', () => (
-    <Header/>
-  ))
+storiesOf("Header", module)
+  .add("start", () => <Header />)
+  .add("Incluyo texto", () => <Header texto="Este es texto alternativo" />);
