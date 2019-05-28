@@ -4,7 +4,7 @@ import { MarkdownEditor } from "@kpm/components";
 import { Card } from "semantic-ui-react";
 import "../test.css";
 
-const texto = `# Title
+const texto = `# Double Click to edit me
 
 ## Secondary title
 
