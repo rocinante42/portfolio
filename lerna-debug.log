@@ -1,0 +1,11 @@
+0 silly argv { _: [ 'add' ],
+0 silly argv   globs: [ 'packages/shared-components' ],
+0 silly argv   lernaVersion: '3.13.2',
+0 silly argv   '$0': 'lerna',
+0 silly argv   pkg: 'semantic-css' }
+1 notice cli v3.13.2
+2 verbose rootPath /Users/robertoamaya/dev/learn/monorepo
+3 info versioning independent
+4 error Error: 404 Not Found - GET https://registry.npmjs.org/semantic-css - Not found
+4 error     at res.buffer.catch.then.body (/Users/robertoamaya/dev/learn/monorepo/node_modules/npm-registry-fetch/check-response.js:104:15)
+4 error     at <anonymous>

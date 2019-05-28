@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "semantic-ui-react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 
@@ -16,8 +17,8 @@ const Header = props => {
   return (
     <Background>
       <div onClick={() => setCount(count + 1)}>
-        {props.texto ? props.texto : "This lives in shared components"} - Click
-        Me {count}
+        {props.texto ? props.texto : "This lives in shared components"} -{" "}
+        <Button>Click me</Button> {count}
       </div>
     </Background>
   );
