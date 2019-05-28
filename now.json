@@ -5,14 +5,14 @@
   "scope": "kpm",
   "builds": [
     {
-      "src": "packages/duquiz-admin/package.json",
+      "src": "packages/next-template/package.json",
       "use": "@now/next@canary"
     }
   ],
   "routes": [
     {
       "src": "^(.*)",
-      "dest": "packages/duquiz-admin$1"
+      "dest": "packages/next-template$1"
     }
   ],
   "regions": ["all"]

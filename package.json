@@ -10,8 +10,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:duquiz-admin": "yarn --cwd packages/duquiz-admin dev",
-    "dev:main": "yarn --cwd packages/next-main dev",
+    "dev:template": "yarn --cwd packages/next-template dev",
     "build:components": "yarn --cwd packages/shared-components build",
     "dev:components": "yarn --cwd packages/shared-components storybook",
     "lerna:update": "lernaupdate",
