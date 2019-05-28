@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Segment } from "semantic-ui-react";
 import TextareaAutosize from "react-autosize-textarea";
 import styled from "@emotion/styled";
 import MarkdownRender from "./MarkdownRender";
@@ -25,7 +26,9 @@ export default class MarkdownEditor extends Component {
     /** function of type: f(event, value) {} */
     onChange: PropTypes.func,
     /** onBlur event handler. It fires after the editor has received a blur event */
-    handleBlur: PropTypes.func
+    handleBlur: PropTypes.func,
+    /** Boolean, true or false to animate loader */
+    loading: PropTypes.bool
   };
 
   static defaultProps = {
@@ -94,13 +97,16 @@ export default class MarkdownEditor extends Component {
 
   render() {
     const { controlled, stateValue, markdown, borderStyle } = this.state;
-    const { value } = this.props;
+    const { value, loading, fontcolor } = this.props;
     if (markdown)
       return (
-        <MarkdownRender
-          onClick={this.handleRenderClick}
-          source={controlled ? value : stateValue}
-        />
+        <Segment basic loading={loading}>
+          <MarkdownRender
+            onClick={this.handleRenderClick}
+            source={controlled ? value : stateValue}
+            style={{ color: fontcolor || "#111111" }}
+          />
+        </Segment>
       );
     return (
       <div

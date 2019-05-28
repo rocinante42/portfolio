@@ -45,4 +45,11 @@ storiesOf("MarkdownEditor", module)
       </Card.Content>
     </Card>
   ))
-  .add("Controlled", () => <ControlledComponent />);
+  .add("Controlled", () => <ControlledComponent />)
+  .add("Loading", () => (
+    <Card>
+      <Card.Content>
+        <MarkdownEditor loading defaultValue="**This is a message**" />
+      </Card.Content>
+    </Card>
+  ));
